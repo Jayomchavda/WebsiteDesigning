@@ -1,0 +1,272 @@
+														ASSIGNMENT:1
+
+													Module 1: – Foundation
+
+Web site:- A website is a collection of web pages and related content that is identified by a common domain name and published on at                       		    least one web server.
+
+HTTP:- (Hypertext Transfer Protocol)
+                HTTP is a one type of protocol, it is use to make a structure on webpage.
+
+URL:-  (Uniform Resource Locator)
+              A Uniform Resource Locator, colloquially termed a web address, is a reference to a web resource that specifies its location on a      	      computer network and a mechanism for retrieving it. 
+
+
+												  Module:2 Fundamentals of IT
+
+
+Domain:- Internet address or name, a domain or domain name is the location of a website.
+	          Ex:- .com (Domain)
+
+Hosting:- Hosting, in its most generic sense, is a service through which storage and computing resources are providing to an 			          individual or organization for the accommodation and maintenance of one or more websites and related services
+
+SEO:- (Search Engine Optimization)
+	     Means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines.
+
+
+
+													  Module:-3 HTML
+
+
+Are the HTML tags and elements the same thing?
+Ans:- no same 
+
+
+What are tags and attributes in HTML?
+Tag:-a word is written with in angle breacket is known as tag
+          there are opening and closing tag .
+
+Ex. <html> ...</html>
+
+
+What are void elements in HTML? 
+ANS:- Void element is  element whose content model never allows it to have contents under any circumstances
+
+
+What are HTML Entities? With Example.
+ANS:- HTML entity is a piece of text ("string") that begins with an ampersand ( & ) and ends with a semicolon ( ; ).
+   
+  Ex.         <           Less than             Name:-&lt;               Number:-&#60;          
+                 >          Greater than       Name:-&gt;              Number:-&#62;
+		 &		ampersand          Name:-amp;             Number:-&#38;
+
+
+ What are different types of lists in HTML? With Example.
+ANS:-    (1) order list
+    		(2) unorder list 
+    		(3) description list 
+
+		(1)order list type=1, A, a, I, i,
+		Ex. <ol type="1" start="21">
+      				    <li>Rajkot</li>
+     				    <li>Surat</li>
+    				    <li>Baroda</li>
+  		      </ol>
+
+		(2)unorder list type=default(disc), circle, square
+		Ex. <ul type="disc">
+    			          <li>Rajkot</li>
+       				  <li>Surat</li>
+     				  <li>Baroda</li>
+ 		     </ul>
+
+		(3) description list type=<dd> ,<dl>, <dt>
+		Ex. <dl>
+                          <!-- define term -->
+                         <dt>Fruits</dt>
+
+                         <!-- define description -->
+                         <dd>bananas, apples, grapes</dd>
+
+                         <dt>Summer fruits</dt>
+                         <dd>grapes, watermalon, mango</dd>
+                   </dl>
+
+
+What is the ‘class’ attribute in HTML? With Example.
+ANS:- The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and 		    	     manipulate elements with the specific class name.
+
+		Ex. <body>
+			<div class="city">
+                          <h2>London</h2>
+                          <p>London is the capital of England.</p>
+                      </div>
+		     </body>
+
+
+What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? With Example
+ANS:- in html document there are 3 common attribute are shown :
+            (1) id:-       The id attribute specifies a unique id for an HTML element.
+            (2) class:-  The HTML class attribute specifies one or more class names for an element.
+            (3) style:-  The HTML element is everything from the start tag to the end tag.
+
+		Ex. <tagname>Content goes here...</tagname>
+
+
+What are the various formatting tags in HTML?
+ANS:- 	<b> - Bold text
+		<strong> - Important text
+		<i> - Italic text
+		<em> - Emphasized text
+		<mark> - Marked text
+		<small> - Smaller text
+		<del> - Deleted text
+		<ins> - Inserted text
+		<sub> - Subscript text
+		<sup> - Superscript text
+
+
+How is Cell Padding different from Cell Spacing? With Example.
+ANS:-	cellpadding =>  is give a space between cell border and content.
+		cellspacing => is give a space between cell and border.
+
+<body>
+		 <table border="1" cellpadding="10px" cellspacing="5px" rules="all">
+      		  <caption><i>Student Team Details</i></caption>
+
+                <tr style="background-color: coral;">
+                     <th>Rank</th>
+                     <th>Name</th>
+                     <th>Points</th>
+                     <th>Team</th>
+               </tr>
+   
+       		 <tr>
+            		<th>1</th>
+            		<td>Abc</td>
+          	        <td>50000</td>
+                       <td>dcode</td>
+               </tr>
+     
+    		<tr>
+       		        <th>2</th>
+                       <td>Xyz</td>
+                       <td>20000</td>
+                       <td>dcode</td>
+             </tr>
+      
+             <tr>
+                       <th>3</th>
+                       <td>Mno</td>
+                       <td>8000</td>
+                      <td>xcode</td>
+             </tr>
+     </table>
+</body>
+
+
+How can we club two or more rows or columns into a single row or column in an HTML
+table? With Example.
+ANS:- You can merge two or more table cells in a column using the colspan attribute in a <td> HTML tag (table data). To merge two    	     or more row cells, use the rowspan attribute.
+Ex.
+
+<body>
+	<table>
+		 <tr>
+  			<td colspan="2">&nbsp;</td>
+  			<td>&nbsp;</td>
+ 		</tr>
+ 		<tr>
+  			<td>&nbsp;</td>
+  			<td>&nbsp;</td>
+  			<td>&nbsp;</td>
+ 		</tr>	
+ 		<tr>
+  			<td>&nbsp;</td>
+ 			 <td>&nbsp;</td>
+  			<td>&nbsp;</td>
+		 </tr>
+	</table>
+</body>
+
+
+What is the difference between a block-level element and an inline element?
+ANS:- Block elements always start from a new line. Inline elements never start from a new line. 
+
+
+How to create a Hyperlink in HTML? With Example.
+ANS:- To make a hyperlink in an HTML page, use the <a> and </a> tags, which are the tags used to define the links. The <a> tag  		     indicates where the hyperlink starts and the </a> tag indicates where it ends. Whatever text gets added inside these tags, will 	                  	     work as a hyperlink.
+Ex.
+
+ <body>
+      <h1>Company</h1>
+      <p>
+         We are a <a href="/about/about_team.htm">team</a> of professionals working
+         hard to provide free learning content.
+      </p>
+</body>
+
+
+What is the use of an iframe tag? With Example.
+ANS:- The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML   		    document.
+
+Ex. 
+
+<body>
+
+<iframe src="https://www.google.com" title="Google">
+</iframe>
+
+</body>
+
+
+What is the use of a span tag? Explain with example?
+ANS:- HTML <span> tag is used as a generic container of inline elements. It is used for styling purpose to the grouped inline elements
+
+Ex.
+
+<body>  
+  <h2>Example of span tag</h2>  
+  <p>I have choosen only   
+    <span style="color: red;">red</span>,   
+    <span style="color: blue;">blue</span>, and  
+    <span style="color: green;">green</span> colors for my painting.  
+  </p>  
+</body>  
+
+
+
+How to insert a picture into a background image of a web page? With Example.
+ANS:- To set the background image of a webpage, use the CSS style. Under the CSS <style> tag, add the property background-			     image. The property sets a graphic such as jpg, png, svg, gif, etc. HTML5 do not support the <body> background attribute, so      	     CSS is used to change set background image.
+
+Ex. <html>
+    		<head>
+        		<title>Cricket</title>
+    		</head>
+      <body>
+               <img src="image01.jpg" alt="image" width="1500px" height="700px">
+    </body>
+      </html>
+
+
+
+How are active links different from normal links?
+ANS:-  that don't have a mouse cursor over that link is considered a normal link. Some browser recognize active links when the mouse  	     cursor is placed over that link. Others recognize active links when the link has the focus. Those that do not have mouse cursor     	     over the link is said to be normal link.
+
+
+What are the different tags to separate sections of text?
+ANS:- <br> tag – Usually <br> tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line.
+	     <p> tag – This contains the text in the form of a new paragraph.
+            <blockquote> tag – It is used to define a large quoted section.
+
+
+What is SVG?
+ANS:-    SVG stands for Scalable Vector Graphics
+		SVG is used to define vector-based graphics for the Web
+		SVG defines the graphics in XML format
+		Every element and every attribute in SVG files can be animated
+		SVG is a W3C recommendation
+		SVG integrates with other W3C standards such as the DOM and XSL
+
+
+
+What is difference between HTML and XHTML?
+ANS:-  HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible Hypertext Markup Language. 			     XHTML is basically an extension of HTML, which is stricter than HTML. Both languages are used to create web and Android  	     applications. HTML is SGML based, whereas XHTML is an XML-based language.
+
+
+
+ What are logical and physical tags in HTML?
+ANS:-   Logical tags:  are used to tell the browser what kind of text is written inside the tags. They are different from physical tags 	   	      because physical tags are used to decide the appearance of the text and do not provide any information about the text.
+
+	     Physical tags : Physical tags are used to tell the browser how to display the text enclosed in the physical tag.
+
+
