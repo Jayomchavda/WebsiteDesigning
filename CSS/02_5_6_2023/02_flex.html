@@ -36,6 +36,8 @@
 
         .flex-box-left img {
             border-radius: 5%;
+            transition: 1s all ease-in-out;
+
         }
 
         .flex-box-right {
@@ -57,6 +59,15 @@
             letter-spacing: 2px;
             padding-bottom: 20px;
         }
+
+        .zoom {
+            margin: 25px;
+            overflow: hidden;
+        }
+
+        .zoom:hover img {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
@@ -66,7 +77,9 @@
             <div class="simple-p">
                 <div class="flex-box">
                     <div class="flex-box-left">
-                        <img src="img1.png" alt="">
+                        <div class="zoom">
+                            <img src="img1.png" alt="">
+                        </div>
                     </div>
                     <div class="flex-box-right">
                         <h1>Simple websites</h1>

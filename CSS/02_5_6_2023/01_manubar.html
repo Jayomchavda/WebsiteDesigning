@@ -13,10 +13,15 @@
             padding: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+
+
         }
 
         a {
             text-decoration: none;
+            font-size: 16px;
+            color: brown;
+            font-weight: 600;
         }
 
         ul {
@@ -24,13 +29,17 @@
         }
 
         header {
-            background-color: rgb(2, 128, 128);
+            /* background-color: rgb(2, 128, 128); */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(4px);
+            z-index: 11111;
         }
 
         header .header-m {
             margin-left: 80px;
             margin-right: 80px;
-
         }
 
         header .header-p {
@@ -41,21 +50,19 @@
         header .header-flex {
             display: flex;
             align-items: center;
-
         }
 
         header .header-flex h1 {
-            color: white;
-            margin: 18px;
+            color: brown;
             padding-left: 50px;
             text-decoration-line: underline;
             text-decoration-style: double;
+            font-size: 40px;
+            font-weight: 900;
         }
 
         header .navbar {
             flex: 2;
-
-
         }
 
 
@@ -63,9 +70,10 @@
         header .navbar ul {
             display: flex;
             justify-content: flex-end;
-            gap: 40px;
-
+            align-items: center;
+            gap: 40px
         }
+
 
         header .navbar ul li {
             padding: 8px;
@@ -73,14 +81,86 @@
         }
 
         header .navbar ul li a {
-            color: white;
+            color: brow;
+
         }
 
         header .navbar .call span {
             border-radius: 50%;
-            background-color: red;
+            background-color: white;
             padding: 10PX;
+        }
 
+        span {
+            color: brown;
+        }
+
+
+
+        /* ======== flex  css========= */
+        .simple {
+            background-color: #4646cb;
+        }
+
+        .simple-m {
+            margin: 20px 20px;
+        }
+
+        .simple-p {
+            padding: 40px 40px;
+        }
+
+        .flex-box {
+            display: flex;
+            gap: 40px;
+        }
+
+        .simple .flex-box .flex-box-left {
+            flex: 1;
+        }
+
+        .flex-box-left img {
+            border-radius: 5%;
+            transition: 1s all ease-in-out;
+
+        }
+
+        .flex-box-right {
+            padding: 40px;
+        }
+
+        .flex-box-right h1 {
+            font-size: 37px;
+            text-transform: capitalize;
+            padding-bottom: 60px;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            padding-bottom: 100px;
+        }
+
+        .flex-box-right p {
+            line-height: 30px;
+            letter-spacing: 2px;
+            padding-bottom: 20px;
+        }
+
+        .zoom {
+            margin: 25px;
+            overflow: hidden;
+        }
+
+        .zoom:hover img {
+            transform: scale(1.2);
+        }
+
+        /* ======== hiroimg ======= */
+
+        .hiroimg img {
+            height: 900px;
+            width: 1519px;
+            background-position: center;
+            background-size: cover;
+            filter: brightness(0.5);
 
         }
     </style>
@@ -92,34 +172,68 @@
         <div class="header-m">
             <div class="header-p">
                 <div class="header-flex">
-                    <h1>99designs</h1>
+                    <div>
+                        <h1>99designs</h1>
+                    </div>
+                    <div class="navbar">
+                        <ul class="displmanu">
+                            <li><a href="">Categories
+                                    <span class="fa-solid fa-angle-down"></a></span>
+                            </li>
+                            <li><a href="">How it work<span class="fa-solid fa-angle-down"></a></span></li>
+
+
+                            <li><a href="">Find a designer
+                                    <span class="fa-solid fa-angle-down"></a></span>
+                            </li>
+
+
+                            <li><a href="">Inspiration <span class="fa-solid fa-angle-down"></a></span></li>
+
+
+                            <li><a href="">Studio <span class="fa-solid fa-angle-down"></a></span></li>
+
+
+                            <li class="call"><a href="">
+                                    <span class="fa-solid fa-phone"></span>
+                                </a></li>
+
+
+                            <li><a href="">Login</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="navbar">
-                    <ul>
-                        <li><a
-                                href="file:///C:/Users/jayom%20chavda/OneDrive/Desktop/03_may/CSS/02_5_6_2023/02_flex.html">Categories</a>
-                        </li>
-                        <li><a href="">How it work</a></li>
-                        <li><a href="">Find a designer</a></li>
-                        <li><a href="">Inspiration</a></li>
-                        <li><a href="">Studio</a></li>
-                        <li class="call"><a href="">
-                                <span class="fa-solid fa-phone"></span>
-                            </a></li>
-
-
-                        <li><a href="">Login</a></li>
-                    </ul>
-                </div>
-
-
-
-
-
 
             </div>
         </div>
     </header>
+
+    <div class="hiroimg">
+        <img src="image/img1.jpg" alt="">
+    </div>
+
+
+    <section calss="simple">
+        <div class="simple-m">
+            <div class="simple-p">
+                <div class="flex-box">
+                    <div class="flex-box-left">
+                        <div class="zoom">
+                            <img src="img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex-box-right">
+                        <h1>Simple websites</h1>
+                        <p>Make your business shine online with a custom simple website designed just for you by a
+                            professional designer. Need ideas? We’ve collected some amazing examples of simple websites
+                            from our global community of designers. Get inspired and start planning the perfect simple
+                            web design today.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
