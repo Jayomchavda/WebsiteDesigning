@@ -5,165 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menubar</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
-
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            color: brown;
-            font-weight: 600;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        header {
-            /* background-color: rgb(2, 128, 128); */
-            position: fixed;
-            top: 0;
-            width: 100%;
-            backdrop-filter: blur(4px);
-            z-index: 11111;
-        }
-
-        header .header-m {
-            margin-left: 80px;
-            margin-right: 80px;
-        }
-
-        header .header-p {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        header .header-flex {
-            display: flex;
-            align-items: center;
-        }
-
-        header .header-flex h1 {
-            color: brown;
-            padding-left: 50px;
-            text-decoration-line: underline;
-            text-decoration-style: double;
-            font-size: 40px;
-            font-weight: 900;
-        }
-
-        header .navbar {
-            flex: 2;
-        }
-
-
-
-        header .navbar ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 40px
-        }
-
-
-        header .navbar ul li {
-            padding: 8px;
-
-        }
-
-        header .navbar ul li a {
-            color: brow;
-
-        }
-
-        header .navbar .call span {
-            border-radius: 50%;
-            background-color: white;
-            padding: 10PX;
-        }
-
-        span {
-            color: brown;
-        }
-
-
-
-        /* ======== flex  css========= */
-        .simple {
-            background-color: #4646cb;
-        }
-
-        .simple-m {
-            margin: 20px 20px;
-        }
-
-        .simple-p {
-            padding: 40px 40px;
-        }
-
-        .flex-box {
-            display: flex;
-            gap: 40px;
-        }
-
-        .simple .flex-box .flex-box-left {
-            flex: 1;
-        }
-
-        .flex-box-left img {
-            border-radius: 5%;
-            transition: 1s all ease-in-out;
-
-        }
-
-        .flex-box-right {
-            padding: 40px;
-        }
-
-        .flex-box-right h1 {
-            font-size: 37px;
-            text-transform: capitalize;
-            padding-bottom: 60px;
-            text-decoration-line: underline;
-            text-decoration-style: dotted;
-            padding-bottom: 100px;
-        }
-
-        .flex-box-right p {
-            line-height: 30px;
-            letter-spacing: 2px;
-            padding-bottom: 20px;
-        }
-
-        .zoom {
-            margin: 25px;
-            overflow: hidden;
-        }
-
-        .zoom:hover img {
-            transform: scale(1.2);
-        }
-
-        /* ======== hiroimg ======= */
-
-        .hiroimg img {
-            height: 900px;
-            width: 1519px;
-            background-position: center;
-            background-size: cover;
-            filter: brightness(0.5);
-
-        }
-    </style>
+    <link rel="stylesheet" href="max_576.css">
 </head>
 
 
@@ -210,6 +54,7 @@
 
     <div class="hiroimg">
         <img src="image/img1.jpg" alt="">
+
     </div>
 
 
@@ -219,7 +64,7 @@
                 <div class="flex-box">
                     <div class="flex-box-left">
                         <div class="zoom">
-                            <img src="img1.png" alt="">
+                            <img src="image/img01.png" alt="">
                         </div>
                     </div>
                     <div class="flex-box-right">
@@ -234,6 +79,109 @@
             </div>
         </div>
     </section>
+
+    <section class="designcategories">
+        <div class="designcategories-m">
+            <div class="designcategories-p">
+                <div class="text">
+                    <h2>Design for what you need</h2>
+                </div>
+                <div class="designdetails">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="image/logoimg.jpg" alt="">
+                            <p class="p1"><a href="">Logo & Branding design<span
+                                        class="fa-solid fa-arrow-right fa-beat"></span></a></p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="image/img2.jpg" alt="">
+                            <p class="p1"><a href="">Visiting card Design<span
+                                        class="fa-solid fa-arrow-right fa-beat"></span></a></p>
+
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="image/img3.jpg" alt="">
+                            <p class="p1"><a href="">Business & Advertising <span
+                                        class="fa-solid fa-arrow-right fa-beat"></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="image/img4.jpg" alt="">
+                            <p class="p1"><a href="">Art & Illustration <span
+                                        class="fa-solid fa-arrow-right fa-beat"></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="image/img5.jpg" alt="">
+                            <p class="p1"><a href="">Packaging and Label <span
+                                        class="fa-solid fa-arrow-right fa-beat"></span></a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="branching">
+        <div class="bc-m">
+            <div class="bc-p">
+                <div class="title">
+                    <h1>Branches</h1>
+                </div>
+                <div class="branch-gridbox">
+                    <div class="branch-grid">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot fa-beat"></i>
+                        </div>
+                        <h2><a href="">Rajkot</a></h2>
+                        <p>P.D Malaviya college, near ring road. Rajkot</p>
+
+                    </div>
+
+                    <div class="branch-grid">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot fa-beat"></i>
+                        </div>
+                        <h2><a href="">Ahmedabad</a></h2>
+                        <p>Samedh Complex, 905, Chimanlal Girdharlal Rd, Ellisbridge. Ahmedabad</p>
+
+                    </div>
+
+                    <div class="branch-grid">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot fa-beat"></i>
+                        </div>
+                        <h2><a href="">Surat</a></h2>
+                        <p>301 Jeevandeep Complex, Ring Rd, next to Nirmal Hospital. Surat</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
 </body>
 
 </html>

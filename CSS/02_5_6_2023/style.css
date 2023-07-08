@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: brown;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    /* background-color: rgb(2, 128, 128); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 1111
+}
+
+header .header-m {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+header .header-p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header .header-flex {
+    display: flex;
+    align-items: center;
+}
+
+header .header-flex h1 {
+    color: brown;
+    padding-left: 50px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+header .navbar {
+    flex: 2;
+
+}
+
+
+
+header .navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+
+
+header .navbar ul li {
+    padding: 8px;
+
+}
+
+header .navbar ul li a {
+    color: brow;
+
+}
+
+header .navbar .call span {
+    border-radius: 50%;
+    background-color: white;
+    padding: 10PX;
+}
+
+span {
+    color: brown;
+}
+
+
+
+
+/* ======== flex  css========= */
+.simple {
+    background-color: #4646cb;
+}
+
+.simple-m {
+    margin: 20px 20px;
+}
+
+.simple-p {
+    padding: 40px 40px;
+}
+
+.flex-box {
+    display: flex;
+    gap: 40px;
+}
+
+.simple .flex-box .flex-box-left {
+    flex: 1;
+}
+
+.flex-box-left img {
+    border-radius: 5%;
+    transition: 1s all ease-in-out;
+}
+
+.flex-box-right {
+    padding: 40px;
+}
+
+.flex-box-right h1 {
+    font-size: 37px;
+    text-transform: capitalize;
+    padding-bottom: 60px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    padding-bottom: 100px;
+}
+
+.flex-box-right p {
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.zoom {
+    margin: 25px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+}
+
+/* ======== hiroimg ======= */
+
+.hiroimg img {
+    height: 900px;
+    width: 1519px;
+    background-position: center;
+    background-size: cover;
+    /* filter: brightness(0.2); */
+
+}
+
+/* =========  designcategories  =========== */
+
+
+.designcategories {
+    /* background-color: beige; */
+}
+
+.designcategories-m {
+    margin: 20px 20px;
+}
+
+.designcategories-p {
+    padding: 40px 40px;
+}
+
+.designcategories .text h2 {
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.designcategories .designdetails {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.designcategories .designdetails .box {
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.designcategories .designdetails .box-img img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 1s all ease-in-out;
+
+}
+
+.designcategories .designdetails .box-img img:hover {
+    transform: scale(1.2);
+}
+
+.designcategories .designdetails .box p {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(195, 191, 191);
+    border-radius: 5px;
+}
+
+.designcategories .designdetails .box .p1 a {
+    color: black;
+}
+
+.designcategories .designdetails .box .p1 span {
+    color: black;
+    padding: 0px 7px;
+}
+
+/* ==== branching====== */
+
+
+
+.bc-m {
+    margin: 20px 20px;
+}
+
+.bc-p {
+    padding: 40px 40px;
+}
+
+.branching .title h1 {
+    text-align: center;
+    font-size: 34px;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+.branching .branch-grid .icon i {
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.branching .branch-gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.branching .branch-gridbox .branch-grid h2 a {
+    color: black;
+    font-size: 30px;
+    transition: 0.5s all ease;
+}
+
+.branching .branch-gridbox .branch-grid h2 a:hover {
+    color: rgb(82, 82, 218)
+}
+
+.branching .branch-gridbox .branch-grid p {
+    font-size: 20px;
+    padding: 20px;
+
+}
