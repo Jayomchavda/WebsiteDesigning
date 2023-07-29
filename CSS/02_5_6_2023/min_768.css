@@ -1,0 +1,28 @@
+@media (min-width:768px) {
+    header .header-m {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    header .header-p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    header .navbar ul {
+        display: none;
+    }
+
+    .flex-box-right h1 {
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .flex-box-right p {
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+
+}

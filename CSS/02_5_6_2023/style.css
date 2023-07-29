@@ -16,7 +16,6 @@ ul {
 }
 
 header {
-    /* background-color: rgb(2, 128, 128); */
     position: fixed;
     top: 0;
     width: 100%;
@@ -54,7 +53,6 @@ header .navbar {
 }
 
 
-
 header .navbar ul {
     display: flex;
     justify-content: flex-end;
@@ -88,7 +86,14 @@ span {
 }
 
 
+/* ======== hiroimg ======= */
 
+.hiroimg img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
 
 /* ======== flex  css========= */
 .simple {
@@ -114,7 +119,17 @@ span {
 
 .flex-box-left img {
     border-radius: 5%;
-    transition: 1s all ease-in-out;
+    transition: 1s all ease;
+
+}
+
+
+.flex-box-left {
+    flex: 1;
+}
+
+.flex-box-right {
+    flex: 1;
 }
 
 .flex-box-right {
@@ -146,23 +161,9 @@ span {
     transform: scale(1.2);
 }
 
-/* ======== hiroimg ======= */
 
-.hiroimg img {
-    height: 900px;
-    width: 1519px;
-    background-position: center;
-    background-size: cover;
-    /* filter: brightness(0.2); */
-
-}
 
 /* =========  designcategories  =========== */
-
-
-.designcategories {
-    /* background-color: beige; */
-}
 
 .designcategories-m {
     margin: 20px 20px;
@@ -183,11 +184,9 @@ span {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     width: 100%;
-    /* border: 2px solid black; */
 }
 
 .designcategories .designdetails .box {
-    /* border: 2px solid black; */
     border-radius: 5px;
     overflow: hidden;
 }

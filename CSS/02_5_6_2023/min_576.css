@@ -1,0 +1,45 @@
+@media (min-width:576px) {
+    header .header-m {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header .header-p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    header .navbar ul {
+        display: none;
+    }
+
+
+    .flex-box-left img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .simple-p {
+        padding: 0px 0px;
+    }
+
+    .flex-box-right h1 {
+        text-align: center;
+    }
+
+
+
+    /* =======Design categori===== */
+    .designcategories .designdetails {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+}

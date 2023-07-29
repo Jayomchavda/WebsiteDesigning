@@ -11,7 +11,7 @@
 
     .hiroimg img {
         height: auto;
-        width: 321px;
+        width: 100%;
     }
 
     header .header-flex h1 {
@@ -29,12 +29,12 @@
     }
 
     .simple-p {
-        padding: 5px 5px;
+        padding: 0px 0px;
     }
 
     .flex-box-left img {
         height: auto;
-        width: 300px;
+        max-width: 100%;
     }
 
     .flex-box {
@@ -53,18 +53,19 @@
         padding: 30px;
     }
 
-
-
     .flex-box-right p {
         line-height: 25px;
         letter-spacing: 1px;
         padding-bottom: 0px;
+        text-align: center;
     }
 
     .zoom {
         margin: 5px;
         border-radius: 5%;
     }
+
+
 
 
     /* ============== */
