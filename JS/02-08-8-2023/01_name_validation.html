@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        Enter name: <input type="text" id="username" onblur="return namecheck()" onkeyup="return namecheckvalid()"
+            placeholder="Enter your name" maxlength="20">
+
+        <button class="btn" onclick="return namecheck()">Click here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function namecheck() {
+            let ncheck = document.getElementById("username").value;
+            if (ncheck == "" || ncheck == null) {
+                document.getElementById("msg").innerText = "Enter value";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+
+        }
+
+
+        // ============ key board event =========
+        function namecheckvalid() {
+            let ncheckvalid = document.getElementById("username").value;
+            let regex = /^[a-zA-Z]*$/;
+
+            if (ncheckvalid.match(regex)) {
+                document.getElementById("msg").innerText = "";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "Use only Alphabet characters";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
