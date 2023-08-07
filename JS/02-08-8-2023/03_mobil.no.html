@@ -33,14 +33,16 @@
         }
 
         function mcheck() {
-            let num = document.getElementById("msg").value;
+            let num = document.getElementById("Mnumber").value;
             let regex = /^[0-9]*$/
             let start = /^[6-9]/
 
-            if (regex.test(num) || start.test(num)) {
+            if (regex.test(num) && start.test(num)) {
+                console.log(123);
                 document.getElementById("msg").innerText = ""
                 return false;
             } else {
+                console.log(6666);
                 document.getElementById("msg").innerText = "Invelid Number"
                 return false;
             }
