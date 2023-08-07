@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Email :</label>
+        <input type="text" id="mail" onblur="return checkmail()" placeholder="Enter Your Email"
+            onkeyup="return checkmailvalid()">
+
+        <button id="btn" onclick="return checkmail()">Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkmail() {
+            let mail = document.getElementById("mail").value;
+            if (mail == "" || mail == null) {
+                document.getElementById("msg").innerText = "Enter Email";
+                return false;
+            } else {
+                document.getElementById("mdg").innerText("");
+                return false;
+            }
+        }
+
+        // ===========  KEYBOARD EVENT  ============
+        function checkmailvalid() {
+            let mail = document.getElementById("mail").value;
+            let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!(regex.test(mail))) {
+                document.getElementById("msg").innerText = "Enter Proper Email";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

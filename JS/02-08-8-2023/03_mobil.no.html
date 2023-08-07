@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        Mobil no : <input type="text" id="Mnumber" onblur="return mobilno()" onkeyup="mcheck()" maxlength="10">
+        <button id="btn" onclick="return mobilno()"> Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function mobilno() {
+            let num = document.getElementById("Mnumber").value;
+            if (num == "" || num == null) {
+                document.getElementById("msg").innerText = "Enter Mobil No";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+
+        function mcheck() {
+            let num = document.getElementById("msg").value;
+            let regex = /^[0-9]*$/
+            let start = /^[6-9]/
+
+            if (regex.test(num) || start.test(num)) {
+                document.getElementById("msg").innerText = ""
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "Invelid Number"
+                return false;
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
