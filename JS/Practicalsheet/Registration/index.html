@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="">
+            <h2>Registation for Job</h2>
+            <br>
+            <br>
+            <!-- first name -->
+            <div class="row">
+                <div class="col">First name :</div>
+                <div class="col">
+                    <input type="text" placeholder="Enter Name" id="fname" onblur="return blankcheck(this, 'msg1')"
+                        onkeyup="return namevalid(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Middle Name -->
+            <div class="row">
+                <div class="col">Middle name :</div>
+                <div class="col">
+                    <input type="text" placeholder="Enter Middle Name" id="mname"
+                        onblur="return blankcheck(this, 'msg2')" onkeyup="return namevalid(this, 'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="row">
+                <div class="col">Last name :</div>
+                <div class="col">
+                    <input type="text" placeholder="Enter Last Name" id="lname" onblur="return blankcheck(this, 'msg3')"
+                        onkeyup="return namevalid(this, 'msg3')">
+                </div>
+                <div class="col">
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="row">
+                <div class="col">Address :</div>
+                <div class="col">
+                    <textarea name="" id="addr" cols="30" rows="5" placeholder="Enter Address"
+                        onblur="return blankcheck(this, 'msg4')" onkeyup="return addresscheck(this, 'msg4')"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Date of birth -->
+            <div class="row">
+                <div class="col">Date of Birth :</div>
+                <div class="col">
+                    <input type="date" name="" id="bdate" onblur="return dateblankcheck(this, 'msg5')">
+                </div>
+                <div class="col">
+                    <span id="msg5" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- gender -->
+            <div class="row">
+                <div class="col">Gender :</div>
+                <div class="col">
+                    <input type="radio" id="male" name="gen" onblur="return genderblankcheck(this, 'msg6')">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gen" onblur="return genderblankcheck(blnk, 'msg6')">
+                    <label for="female">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg6" class="msg"></span>
+                </div>
+            </div>
+
+
+            <!-- Mobil number -->
+            <div class="row">
+                <div class="col">Mobil No :</div>
+                <div class="col">
+                    <input type="text" placeholder="Enter Mobil No" id="mnumber"
+                        onblur="return blankcheck(this, 'msg7')" maxlength="10">
+                </div>
+                <div class="col">
+                    <span id="msg7" class="msg"></span>
+                </div>
+            </div>
+
+
+            <!-- Button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button onclick="return formcheck()">click</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
