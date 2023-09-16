@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+
+.topheader a {
+    transition: 0.5s ease all;
+
+}
+
+.topheader a:hover {
+    color: #ed6663 !important;
+
+}
+
+.topheader button {
+    border: 1px solid #ed6663;
+    color: #0f4c81;
+}
+
+.topheader button:hover {
+    border: 1px solid #0f4c81;
+    color: white;
+    background-color: #0f4c81;
+}
+
+.navigation {
+    background-color: #0f4c81;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+}
+
+.mainpage {
+    background: url(images/img1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.mainpage .aboutroom {
+    background-color: white;
+}
+
+.mainpage .aboutroom .mapsign {
+    color: #ffa372;
+}
+
+.mainpage .aboutroom span {
+    color: #ffa372;
+
+}
+
+
+.mainpage .aboutroom .icon1 {
+    font-size: 27px;
+    color: #ed6663;
+}
+
+.mainpage .aboutroom button {
+    background-color: #0f4c81;
+    color: white;
+}
+
+.mainpage .aboutroom button:hover {
+    background-color: white;
+    color: #0f4c81;
+    transition: 1s ease all;
+}
+
+
+
+
+/* ================================================================================ */
+@media (max-width:576px) {
+    .contact {
+        display: none;
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+}
+
+@media (max-width:576px) {
+    .contact {
+        display: none;
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+}
+
+
+@media (min-width:576px) {
+
+
+    .navigation ul {
+        gap: 10px;
+    }
+}
+
+@media (min-width:992px) {
+    .navigation ul {
+        gap: 80px;
+    }
+}
