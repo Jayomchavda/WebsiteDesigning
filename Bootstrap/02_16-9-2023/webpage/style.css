@@ -98,6 +98,86 @@ p {
     transition: 1s ease all;
 }
 
+.searchproperty button {
+    background-color: #ed6663;
+    color: white;
+}
+
+.searchproperty button:hover {
+    background-color: #0f4c81;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .backimg1 {
+    background: url(images/img3.jpg) no-repeat center;
+    background-size: cover;
+    height: 360px;
+}
+
+.wenderimages .backimg2 {
+    background: url(images/img4.jpg) no-repeat center;
+    background-size: cover;
+    height: 360px;
+}
+
+.wenderimages .img1-text {
+    background-color: #ed6663;
+    height: 360px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.wenderimages .img2-text {
+    height: 360px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.wenderimages .spn1 {
+    color: white;
+    font-size: 30px;
+
+}
+
+.wenderimages .spn2 {
+    color: #ed6663;
+    font-size: 30px;
+}
+
+.wenderimages a:hover {
+    color: #0f4c81 !important;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .img5 {
+    background: url(images/img5.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.wenderimages .btn3 {
+    background-color: #ed6663;
+    color: white;
+}
+
+.wenderimages .btn3:hover {
+    background-color: #0f4c81;
+    transition: 0.5s ease all;
+}
+
+.wenderimages .img6 {
+    background: url(images/img6.jpg) no-repeat center;
+    background-size: cover;
+    height: 450px;
+}
+
+.wenderimages .building {
+    background-color: #ed6663;
+    height: 450px;
+}
+
 
 
 
@@ -110,9 +190,16 @@ p {
     .navigation ul {
         gap: 10px;
     }
+
+
+
 }
 
-@media (max-width:576px) {
+
+
+
+
+@media (min-width:576px) {
     .contact {
         display: none;
     }
