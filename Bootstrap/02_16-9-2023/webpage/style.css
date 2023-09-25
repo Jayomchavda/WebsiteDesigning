@@ -178,8 +178,38 @@ p {
     height: 450px;
 }
 
+/* ============================================== */
 
+.placebox {
+    position: relative;
+}
 
+.placebox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    transition: 0.5s ease all;
+}
+
+.placebox:hover .text {
+    background-color: #4892d27f;
+}
+
+.placebox p {
+    transform: rotateX(90deg);
+    transition: 0.5s ease all;
+
+}
+
+.placebox :hover p {
+    transform: rotateX(0deg);
+}
 
 /* ================================================================================ */
 @media (max-width:576px) {
