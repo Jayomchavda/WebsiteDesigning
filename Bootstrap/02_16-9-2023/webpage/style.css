@@ -211,6 +211,27 @@ p {
     transform: rotateX(0deg);
 }
 
+.review {
+    background: url(images/img13.jpg) no-repeat center;
+    background-size: cover;
+    height: 425px;
+}
+
+.review .view {
+    background-color: white;
+}
+
+.review img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
 /* ================================================================================ */
 @media (max-width:576px) {
     .contact {
