@@ -272,6 +272,10 @@ footer a:hover {
         gap: 10px;
     }
 
+    .review .hide {
+        display: none;
+    }
+
 
 
 }
@@ -288,6 +292,12 @@ footer a:hover {
     .navigation ul {
         gap: 10px;
     }
+
+
+
+    .review .hide {
+        display: none;
+    }
 }
 
 
@@ -297,10 +307,18 @@ footer a:hover {
     .navigation ul {
         gap: 10px;
     }
+
+    .review .hide {
+        display: none;
+    }
 }
 
 @media (min-width:992px) {
     .navigation ul {
         gap: 80px;
+    }
+
+    .review .hide {
+        display: unset;
     }
 }
