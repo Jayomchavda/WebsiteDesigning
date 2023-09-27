@@ -227,10 +227,40 @@ p {
     border-radius: 50%;
 }
 
+footer {
+    background-color: #212121;
+}
 
+footer ul li {
+    color: #9b9fa2;
 
+}
 
+footer p {
+    color: #9b9fa2;
+}
 
+footer span {
+    text-decoration: none;
+}
+
+footer a {
+    color: #9b9fa2;
+}
+
+footer a:hover {
+    color: #ed6663;
+    transition: 0.5s ease all;
+}
+
+.copyrights {
+    background-color: black;
+    color: #9b9fa2;
+}
+
+.copyrights p b {
+    color: white;
+}
 
 /* ================================================================================ */
 @media (max-width:576px) {
